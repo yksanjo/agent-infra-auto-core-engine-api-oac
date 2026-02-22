@@ -1,0 +1,16 @@
+[project]
+name = "auto-core-engine-api-oac"
+version = "0.1.0"
+description = "Containerized microservice with Kubernetes support"
+requires-python = ">=3.10"
+dependencies = ["fastapi", "pydantic", "httpx"]
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "mypy", "ruff"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
